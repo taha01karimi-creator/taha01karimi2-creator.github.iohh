@@ -33,36 +33,36 @@
   };
 
   const PRODUCTS = [
-    { id: 1,  name: 'ایرگلایت رانر',       category: 'running',    price: 2450000, oldPrice: null,    color: '#ff4d3d', badge: 'پرفروش', date: '2024-01-10', photo: 'nikeBlack' },
-    { id: 2,  name: 'استریت‌واک کژوال',     category: 'casual',     price: 1890000, oldPrice: 2190000, color: '#3d6bff', badge: 'تخفیف',  date: '2023-11-02', photo: 'samba' },
-    { id: 3,  name: 'دانک‌پرو بسکتبال',      category: 'basketball', price: 3190000, oldPrice: null,    color: '#8a3dff', badge: null,     date: '2024-02-20', photo: 'blackRedChunky' },
-    { id: 4,  name: 'ایزی‌فلوت اسلیپ‌آن',    category: 'slipon',     price: 1450000, oldPrice: null,    color: '#0fb37d', badge: 'جدید',   date: '2024-03-01', photo: 'blackClean' },
-    { id: 5,  name: 'ولوسیتی X۲ رانینگ',    category: 'running',    price: 2790000, oldPrice: 3090000, color: '#ff4d3d', badge: 'تخفیف',  date: '2023-09-14', photo: 'airmaxRed' },
-    { id: 6,  name: 'اربن‌دیز کژوال',        category: 'casual',     price: 1690000, oldPrice: null,    color: '#3d6bff', badge: null,     date: '2023-12-19', photo: 'group3' },
-    { id: 7,  name: 'اسکای‌جامپ بسکتبال',    category: 'basketball', price: 3450000, oldPrice: null,    color: '#8a3dff', badge: 'جدید',   date: '2024-03-18', photo: 'onCloud' },
-    { id: 8,  name: 'کامفی‌گلاید اسلیپ‌آن',  category: 'slipon',     price: 1290000, oldPrice: null,    color: '#0fb37d', badge: null,     date: '2023-08-05', photo: 'nikeBlack' },
-    { id: 9,  name: 'مارتون رانینگ پرو',     category: 'running',    price: 3090000, oldPrice: null,    color: '#ff4d3d', badge: null,     date: '2024-01-28', photo: 'onCloud' },
-    { id: 10, name: 'ریترو کژوال کلاسیک',    category: 'casual',     price: 2090000, oldPrice: 2390000, color: '#3d6bff', badge: 'تخفیف',  date: '2023-10-11', photo: 'blackClean' },
-    { id: 11, name: 'کورت‌کینگ بسکتبال',     category: 'basketball', price: 2990000, oldPrice: null,    color: '#8a3dff', badge: 'پرفروش', date: '2023-07-22', photo: 'samba' },
-    { id: 12, name: 'لایت‌استپ اسلیپ‌آن',    category: 'slipon',     price: 1590000, oldPrice: null,    color: '#0fb37d', badge: 'جدید',   date: '2024-03-25', photo: 'group3' },
-    { id: 13, name: 'فلای‌مود رانینگ',       category: 'running',    price: 2650000, oldPrice: 2950000, color: '#ff4d3d', badge: 'تخفیف',  date: '2024-02-05', photo: 'airmaxRed' },
-    { id: 14, name: 'پالس‌رانر اسپرت',       category: 'running',    price: 2990000, oldPrice: null,    color: '#ff4d3d', badge: null,     date: '2023-12-30', photo: 'nikeBlack' },
-    { id: 15, name: 'دیلی‌واک کژوال',        category: 'casual',     price: 1790000, oldPrice: null,    color: '#3d6bff', badge: 'جدید',   date: '2024-03-08', photo: 'samba' },
-    { id: 16, name: 'نئوکلاسیک کژوال',       category: 'casual',     price: 2190000, oldPrice: null,    color: '#3d6bff', badge: null,     date: '2023-09-27', photo: 'blackClean' },
-    { id: 17, name: 'پاورجامپ بسکتبال',      category: 'basketball', price: 3290000, oldPrice: 3590000, color: '#8a3dff', badge: 'تخفیف',  date: '2024-01-15', photo: 'blackRedChunky' },
-    { id: 18, name: 'الیت‌کورت بسکتبال',     category: 'basketball', price: 3650000, oldPrice: null,    color: '#8a3dff', badge: 'جدید',   date: '2024-03-21', photo: 'onCloud' },
-    { id: 19, name: 'کژوال‌فلکس اسلیپ‌آن',   category: 'slipon',     price: 1390000, oldPrice: null,    color: '#0fb37d', badge: null,     date: '2023-11-19', photo: 'group3' },
-    { id: 20, name: 'ایزی‌دی اسلیپ‌آن',      category: 'slipon',     price: 1690000, oldPrice: 1890000, color: '#0fb37d', badge: 'تخفیف',  date: '2024-02-27', photo: 'samba' },
-    { id: 21, name: 'کوپا استرایکر فوتبال',   category: 'football',   price: 2190000, oldPrice: null,    color: '#ff2d55', badge: 'پرفروش', date: '2024-03-30', photo: 'copaRed' },
-    { id: 22, name: 'فیلدمستر کرامپون',       category: 'football',   price: 1990000, oldPrice: 2290000, color: '#ff2d55', badge: 'تخفیف',  date: '2024-01-05', photo: 'copaRed' },
-    { id: 23, name: 'پرو‌پیچ فوتبال کلیت',     category: 'football',   price: 2450000, oldPrice: null,    color: '#ff2d55', badge: 'جدید',   date: '2024-03-27', photo: 'copaRed' },
-    { id: 24, name: 'استادیوم‌ایکس فوتبال',    category: 'football',   price: 2690000, oldPrice: null,    color: '#ff2d55', badge: null,     date: '2023-10-22', photo: 'copaRed' },
-    { id: 25, name: 'گل‌زن اکسترا فوتبال',     category: 'football',   price: 2090000, oldPrice: null,    color: '#ff2d55', badge: null,     date: '2023-08-14', photo: 'copaRed' },
+    { id: 1,  name: 'ایرگلایت رانر',       category: 'running',    price: 2190000, oldPrice: 2590000, color: '#ff4d3d', badge: 'پرفروش', date: '2024-01-10', photo: 'nikeBlack' },
+    { id: 2,  name: 'استریت‌واک کژوال',     category: 'casual',     price: 1690000, oldPrice: 1990000, color: '#3d6bff', badge: null,     date: '2023-11-02', photo: 'samba' },
+    { id: 3,  name: 'دانک‌پرو بسکتبال',      category: 'basketball', price: 2690000, oldPrice: null,    color: '#8a3dff', badge: null,     date: '2024-02-20', photo: 'blackRedChunky' },
+    { id: 4,  name: 'ایزی‌فلوت اسلیپ‌آن',    category: 'slipon',     price: 1190000, oldPrice: null,    color: '#0fb37d', badge: 'جدید',   date: '2024-03-01', photo: 'blackClean' },
+    { id: 5,  name: 'ولوسیتی X۲ رانینگ',    category: 'running',    price: 2390000, oldPrice: 2890000, color: '#ff4d3d', badge: null,     date: '2023-09-14', photo: 'airmaxRed' },
+    { id: 6,  name: 'اربن‌دیز کژوال',        category: 'casual',     price: 1490000, oldPrice: null,    color: '#3d6bff', badge: null,     date: '2023-12-19', photo: 'group3' },
+    { id: 7,  name: 'اسکای‌جامپ بسکتبال',    category: 'basketball', price: 2890000, oldPrice: 3290000, color: '#8a3dff', badge: 'جدید',   date: '2024-03-18', photo: 'onCloud' },
+    { id: 8,  name: 'کامفی‌گلاید اسلیپ‌آن',  category: 'slipon',     price: 1090000, oldPrice: null,    color: '#0fb37d', badge: null,     date: '2023-08-05', photo: 'nikeBlack' },
+    { id: 9,  name: 'مارتون رانینگ پرو',     category: 'running',    price: 2590000, oldPrice: null,    color: '#ff4d3d', badge: null,     date: '2024-01-28', photo: 'onCloud' },
+    { id: 10, name: 'ریترو کژوال کلاسیک',    category: 'casual',     price: 1790000, oldPrice: 2190000, color: '#3d6bff', badge: null,     date: '2023-10-11', photo: 'blackClean' },
+    { id: 11, name: 'کورت‌کینگ بسکتبال',     category: 'basketball', price: 2490000, oldPrice: 2890000, color: '#8a3dff', badge: 'پرفروش', date: '2023-07-22', photo: 'samba' },
+    { id: 12, name: 'لایت‌استپ اسلیپ‌آن',    category: 'slipon',     price: 1290000, oldPrice: null,    color: '#0fb37d', badge: 'جدید',   date: '2024-03-25', photo: 'group3' },
+    { id: 13, name: 'فلای‌مود رانینگ',       category: 'running',    price: 2290000, oldPrice: 2590000, color: '#ff4d3d', badge: null,     date: '2024-02-05', photo: 'airmaxRed' },
+    { id: 14, name: 'پالس‌رانر اسپرت',       category: 'running',    price: 2590000, oldPrice: null,    color: '#ff4d3d', badge: null,     date: '2023-12-30', photo: 'nikeBlack' },
+    { id: 15, name: 'دیلی‌واک کژوال',        category: 'casual',     price: 1390000, oldPrice: null,    color: '#3d6bff', badge: 'جدید',   date: '2024-03-08', photo: 'samba' },
+    { id: 16, name: 'نئوکلاسیک کژوال',       category: 'casual',     price: 1890000, oldPrice: 2290000, color: '#3d6bff', badge: null,     date: '2023-09-27', photo: 'blackClean' },
+    { id: 17, name: 'پاورجامپ بسکتبال',      category: 'basketball', price: 2790000, oldPrice: 3190000, color: '#8a3dff', badge: null,     date: '2024-01-15', photo: 'blackRedChunky' },
+    { id: 18, name: 'الیت‌کورت بسکتبال',     category: 'basketball', price: 3190000, oldPrice: null,    color: '#8a3dff', badge: 'جدید',   date: '2024-03-21', photo: 'onCloud' },
+    { id: 19, name: 'کژوال‌فلکس اسلیپ‌آن',   category: 'slipon',     price: 1090000, oldPrice: 1290000, color: '#0fb37d', badge: null,     date: '2023-11-19', photo: 'group3' },
+    { id: 20, name: 'ایزی‌دی اسلیپ‌آن',      category: 'slipon',     price: 1390000, oldPrice: 1590000, color: '#0fb37d', badge: null,     date: '2024-02-27', photo: 'samba' },
+    { id: 21, name: 'کوپا استرایکر فوتبال',   category: 'football',   price: 1690000, oldPrice: null,    color: '#ff2d55', badge: 'پرفروش', date: '2024-03-30', photo: 'copaRed' },
+    { id: 22, name: 'فیلدمستر کرامپون',       category: 'football',   price: 1490000, oldPrice: 1790000, color: '#ff2d55', badge: null,     date: '2024-01-05', photo: 'copaRed' },
+    { id: 23, name: 'پرو‌پیچ فوتبال کلیت',     category: 'football',   price: 1890000, oldPrice: null,    color: '#ff2d55', badge: 'جدید',   date: '2024-03-27', photo: 'copaRed' },
+    { id: 24, name: 'استادیوم‌ایکس فوتبال',    category: 'football',   price: 2090000, oldPrice: 2390000, color: '#ff2d55', badge: null,     date: '2023-10-22', photo: 'copaRed' },
+    { id: 25, name: 'گل‌زن اکسترا فوتبال',     category: 'football',   price: 1590000, oldPrice: null,    color: '#ff2d55', badge: null,     date: '2023-08-14', photo: 'copaRed' },
     { id: 26, name: 'نیوبالانس ۹۹۰ کلاسیک',   category: 'running',    price: 4290000, oldPrice: null,    color: '#6b7280', badge: 'پرفروش', date: '2024-02-11', photo: 'nb990' },
-    { id: 27, name: 'نیوبالانس ۹۰۶۰ کربن',    category: 'casual',     price: 3990000, oldPrice: 4390000, color: '#6b7280', badge: 'تخفیف',  date: '2023-12-02', photo: 'nb9060Black' },
-    { id: 28, name: 'نیوبالانس ۹۰۶۰ کرمی',    category: 'casual',     price: 3990000, oldPrice: null,    color: '#6b7280', badge: 'جدید',   date: '2024-03-14', photo: 'nb9060White' },
-    { id: 29, name: 'اسیکس جل کوانتوم',       category: 'running',    price: 3690000, oldPrice: null,    color: '#3d6bff', badge: null,     date: '2023-11-25', photo: 'asicsGel' },
-    { id: 30, name: 'آن‌کلود ترمو‌فیز',        category: 'running',    price: 4590000, oldPrice: null,    color: '#14171f', badge: 'جدید',   date: '2024-03-05', photo: 'onCloudWhite' },
+    { id: 27, name: 'نیوبالانس ۹۰۶۰ کربن',    category: 'casual',     price: 3790000, oldPrice: 4290000, color: '#6b7280', badge: null,     date: '2023-12-02', photo: 'nb9060Black' },
+    { id: 28, name: 'نیوبالانس ۹۰۶۰ کرمی',    category: 'casual',     price: 3790000, oldPrice: null,    color: '#6b7280', badge: 'جدید',   date: '2024-03-14', photo: 'nb9060White' },
+    { id: 29, name: 'اسیکس جل کوانتوم',       category: 'running',    price: 3490000, oldPrice: 3890000, color: '#3d6bff', badge: null,     date: '2023-11-25', photo: 'asicsGel' },
+    { id: 30, name: 'آن‌کلود ترمو‌فیز',        category: 'running',    price: 4390000, oldPrice: null,    color: '#14171f', badge: 'جدید',   date: '2024-03-05', photo: 'onCloudWhite' },
   ];
 
   const CATEGORY_LABELS = {
@@ -184,6 +184,7 @@
 
   let activeCategory = 'all';
   let activeSort = 'default';
+  let wishlist = []; // آرایه‌ی شناسه محصولات مورد علاقه
 
   function getFilteredProducts() {
     let list = activeCategory === 'all'
@@ -222,29 +223,30 @@
       card.style.setProperty('--tag-color', product.color);
       card.style.animationDelay = `${index * 60}ms`;
 
-      const discountBadge = product.oldPrice
-        ? `<span class="badge">${product.badge || 'تخفیف'}</span>`
-        : (product.badge ? `<span class="badge">${product.badge}</span>` : '<span></span>');
+      const statusBadge = product.badge ? `<span class="badge">${product.badge}</span>` : '<span></span>';
+      const discountPercent = product.oldPrice ? Math.round((1 - product.price / product.oldPrice) * 100) : 0;
+      const isWished = wishlist.includes(product.id);
 
       card.innerHTML = `
         <div class="card-trail"></div>
         <div class="card-top">
-          ${discountBadge}
-          <button class="icon-btn wish-btn" aria-label="افزودن به علاقه‌مندی‌ها" data-wish="${product.id}">
+          ${statusBadge}
+          <button class="icon-btn wish-btn${isWished ? ' active' : ''}" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="${isWished}" data-wish="${product.id}">
             <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.3-9.5-8.8C.8 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 6 3.7 2.3-2.5 3.8-3.7 6-3.7 3.6 0 5.2 3.5 3.5 6.7C19 15.7 12 20 12 20Z"/></svg>
           </button>
         </div>
         <div class="card-media" data-quickview="${product.id}">
+          ${discountPercent > 0 ? `<span class="discount-tag">٪${discountPercent}-</span>` : ''}
           ${productVisual(product, 'card-' + product.id)}
         </div>
         <div class="card-body">
           <span class="card-cat">${CATEGORY_LABELS[product.category]}</span>
           <h3 class="card-name">${product.name}</h3>
           <div class="card-bottom">
-            <span class="card-price price-mono">
-              ${formatToman(product.price)}
-              ${product.oldPrice ? `<span class="old">${formatToman(product.oldPrice)}</span>` : ''}
-            </span>
+            <div class="price-block">
+              <span class="card-price price-mono">${formatToman(product.price)}</span>
+              ${product.oldPrice ? `<span class="old price-mono">${formatToman(product.oldPrice)}</span>` : ''}
+            </div>
             <button class="add-btn" data-add="${product.id}" aria-label="افزودن به سبد خرید">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </button>
@@ -267,7 +269,7 @@
 
   productGrid.addEventListener('click', (e) => {
     const wishBtn = e.target.closest('[data-wish]');
-    if (wishBtn) { wishBtn.classList.toggle('active'); return; }
+    if (wishBtn) { toggleWishlist(Number(wishBtn.dataset.wish)); return; }
 
     const addBtn = e.target.closest('[data-add]');
     if (addBtn) {
@@ -370,6 +372,7 @@
   });
 
   function openCart() {
+    closeWishlist();
     cartDrawer.classList.add('open');
     cartDrawer.setAttribute('aria-hidden', 'false');
     overlay.classList.add('show');
@@ -377,15 +380,13 @@
   function closeCart() {
     cartDrawer.classList.remove('open');
     cartDrawer.setAttribute('aria-hidden', 'true');
-    if (!quickView.classList.contains('open') && !authModal.classList.contains('open') && !mainNav.classList.contains('open')) {
-      overlay.classList.remove('show');
-    }
+    hideOverlayIfAllClosed();
   }
 
   cartBtn.addEventListener('click', openCart);
   closeCartBtn.addEventListener('click', closeCart);
   cartEmptyBtn.addEventListener('click', closeCart);
-  overlay.addEventListener('click', () => { closeCart(); closeQuickView(); closeMobileMenu(); closeAuthModal(); });
+  overlay.addEventListener('click', () => { closeCart(); closeQuickView(); closeMobileMenu(); closeAuthModal(); closeWishlist(); });
 
   $('#checkoutBtn').addEventListener('click', () => {
     if (cart.length === 0) return;
@@ -442,10 +443,103 @@
   function closeQuickView() {
     quickView.classList.remove('open');
     quickView.setAttribute('aria-hidden', 'true');
-    if (!cartDrawer.classList.contains('open') && !authModal.classList.contains('open') && !document.getElementById('mainNav').classList.contains('open')) {
-      overlay.classList.remove('show');
-    }
+    hideOverlayIfAllClosed();
   }
+
+  /* -------------------- علاقه‌مندی‌ها (Wishlist) -------------------- */
+  const wishlistDrawer = $('#wishlistDrawer');
+  const wishlistItemsEl = $('#wishlistItems');
+  const wishlistCountEl = $('#wishlistCount');
+  const wishlistBtn = $('#wishlistBtn');
+  const closeWishlistBtn = $('#closeWishlist');
+  const wishlistEmptyBtn = $('#wishlistEmptyBtn');
+
+  // یک نقطه مرکزی برای بستن پس‌زمینه‌ی تیره: فقط وقتی هیچ پنجره‌ای باز نیست مخفی می‌شود
+  function hideOverlayIfAllClosed() {
+    const stillOpen =
+      cartDrawer.classList.contains('open') ||
+      quickView.classList.contains('open') ||
+      authModal.classList.contains('open') ||
+      wishlistDrawer.classList.contains('open') ||
+      document.getElementById('mainNav').classList.contains('open');
+    if (!stillOpen) overlay.classList.remove('show');
+  }
+
+  function toggleWishlist(id) {
+    const idx = wishlist.indexOf(id);
+    const nowActive = idx === -1;
+    if (nowActive) wishlist.push(id); else wishlist.splice(idx, 1);
+
+    // آپدیت تمام دکمه‌های قلب مربوط به این محصول (کارت‌ها ممکنه چند جا رندر شده باشن)
+    $$(`[data-wish="${id}"]`).forEach(btn => {
+      btn.classList.toggle('active', nowActive);
+      btn.setAttribute('aria-pressed', String(nowActive));
+      if (nowActive) {
+        btn.classList.remove('bump-heart');
+        void btn.offsetWidth;
+        btn.classList.add('bump-heart');
+      }
+    });
+
+    wishlistCountEl.textContent = wishlist.length;
+    wishlistCountEl.classList.remove('bump');
+    void wishlistCountEl.offsetWidth;
+    wishlistCountEl.classList.add('bump');
+
+    renderWishlist();
+  }
+
+  function renderWishlist() {
+    wishlistDrawer.classList.toggle('is-empty', wishlist.length === 0);
+
+    wishlistItemsEl.innerHTML = wishlist.map(id => {
+      const product = PRODUCTS.find(p => p.id === id);
+      if (!product) return '';
+      return `
+        <div class="cart-item wishlist-item">
+          <div class="cart-item-media" style="--tag-color:${product.color}">${productVisual(product, 'wish-' + product.id)}</div>
+          <div class="cart-item-info">
+            <h5>${product.name}</h5>
+            <div class="cart-item-price price-mono">${formatToman(product.price)}</div>
+            <div class="wishlist-actions">
+              <button class="btn btn-primary wishlist-add-btn" data-wish-add="${product.id}">افزودن به سبد</button>
+              <button class="remove-btn" data-wish-remove="${product.id}">حذف</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  wishlistItemsEl.addEventListener('click', (e) => {
+    const addBtn = e.target.closest('[data-wish-add]');
+    if (addBtn) {
+      const id = Number(addBtn.dataset.wishAdd);
+      addToCart(id, SIZES[2]);
+      showToast('به سبد خرید اضافه شد ✓');
+      return;
+    }
+    const removeBtn = e.target.closest('[data-wish-remove]');
+    if (removeBtn) {
+      toggleWishlist(Number(removeBtn.dataset.wishRemove));
+    }
+  });
+
+  function openWishlist() {
+    closeCart();
+    wishlistDrawer.classList.add('open');
+    wishlistDrawer.setAttribute('aria-hidden', 'false');
+    overlay.classList.add('show');
+  }
+  function closeWishlist() {
+    wishlistDrawer.classList.remove('open');
+    wishlistDrawer.setAttribute('aria-hidden', 'true');
+    hideOverlayIfAllClosed();
+  }
+
+  wishlistBtn.addEventListener('click', openWishlist);
+  closeWishlistBtn.addEventListener('click', closeWishlist);
+  wishlistEmptyBtn.addEventListener('click', closeWishlist);
 
   /* -------------------- ورود / ثبت‌نام -------------------- */
   const authModal = $('#authModal');
@@ -453,6 +547,7 @@
   const authClose = $('#authClose');
   const authStepPhone = $('#authStepPhone');
   const authStepCode = $('#authStepCode');
+  const authName = $('#authName');
   const authPhone = $('#authPhone');
   const authCode = $('#authCode');
   const authMessage = $('#authMessage');
@@ -463,6 +558,7 @@
   function resetAuthForm() {
     authStepPhone.hidden = false;
     authStepCode.hidden = true;
+    authName.value = '';
     authPhone.value = '';
     authCode.value = '';
     authMessage.textContent = '';
@@ -473,15 +569,13 @@
     authModal.classList.add('open');
     authModal.setAttribute('aria-hidden', 'false');
     overlay.classList.add('show');
-    setTimeout(() => authPhone.focus(), 300);
+    setTimeout(() => authName.focus(), 300);
   }
 
   function closeAuthModal() {
     authModal.classList.remove('open');
     authModal.setAttribute('aria-hidden', 'true');
-    if (!cartDrawer.classList.contains('open') && !quickView.classList.contains('open') && !mainNav.classList.contains('open')) {
-      overlay.classList.remove('show');
-    }
+    hideOverlayIfAllClosed();
     setTimeout(resetAuthForm, 300);
   }
 
@@ -489,7 +583,14 @@
   authClose.addEventListener('click', closeAuthModal);
 
   authSendBtn.addEventListener('click', () => {
+    const name = authName.value.trim();
     const phone = authPhone.value.trim();
+
+    if (name.length < 3) {
+      authMessage.classList.remove('success');
+      authMessage.textContent = 'لطفاً نام و نام‌خانوادگی رو کامل وارد کن.';
+      return;
+    }
     if (phone.length !== 11 || !phone.startsWith('09') || !/^\d+$/.test(phone)) {
       authMessage.classList.remove('success');
       authMessage.textContent = 'لطفاً یک شماره موبایل معتبر ۱۱ رقمی وارد کن.';
@@ -509,9 +610,10 @@
       authMessage.textContent = 'کد تایید باید ۴ رقم باشد.';
       return;
     }
+    const name = authName.value.trim();
     authMessage.classList.add('success');
     authMessage.textContent = 'ورود با موفقیت انجام شد 🎉';
-    showToast('خوش اومدی! ورود موفق بود ✓');
+    showToast(`خوش اومدی ${name}! ورود موفق بود ✓`);
     setTimeout(closeAuthModal, 900);
   });
 
@@ -523,6 +625,7 @@
     setTimeout(() => authPhone.focus(), 50);
   });
 
+  authName.addEventListener('keydown', (e) => { if (e.key === 'Enter') authPhone.focus(); });
   authPhone.addEventListener('keydown', (e) => { if (e.key === 'Enter') authSendBtn.click(); });
   authCode.addEventListener('keydown', (e) => { if (e.key === 'Enter') authVerifyBtn.click(); });
 
@@ -537,9 +640,7 @@
     menuToggle.classList.remove('open');
     menuToggle.setAttribute('aria-expanded', 'false');
     mainNav.classList.remove('open');
-    if (!cartDrawer.classList.contains('open') && !quickView.classList.contains('open') && !authModal.classList.contains('open')) {
-      overlay.classList.remove('show');
-    }
+    hideOverlayIfAllClosed();
   }
 
   menuToggle.addEventListener('click', () => {
@@ -548,6 +649,9 @@
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     overlay.classList.toggle('show', isOpen);
   });
+
+  const navClose = $('#navClose');
+  if (navClose) navClose.addEventListener('click', closeMobileMenu);
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -575,6 +679,7 @@
       closeMobileMenu();
       closeSortDropdown();
       closeAuthModal();
+      closeWishlist();
     }
   });
 
