@@ -225,16 +225,32 @@ h1, h2, h3, h4 { font-weight: 800; letter-spacing: -.01em; }
   height: var(--header-h);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid transparent;
+  transition: height .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+/* پس‌زمینه‌ی بلور روی یک pseudo-element جدا قرار می‌گیره، نه خود .site-header؛
+   چون backdrop-filter روی خود هدر باعث می‌شد این المنت یک "containing block" جدید
+   برای فرزندهای position:fixed بسازه (طبق اسپک CSS، مثل transform/filter عمل می‌کنه).
+   نتیجه‌ش این بود که منوی موبایل (#mainNav که position:fixed و inset:0 داره تا کل
+   صفحه رو بپوشونه) به‌جای پوشوندن کل ویوپورت، فقط داخل باکس کوچیک هدر (۶۶ تا ۷۸ پیکسل)
+   محدود می‌شد؛ و چون overlay تیره‌ی پشت منو این محدودیت رو نداشت و کل صفحه رو می‌پوشوند،
+   حاصل کار یه سیاهی/تیرگی روی کل صفحه به‌جای نمایش درست منو بود. */
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(238, 240, 243, .7);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid transparent;
-  transition: height .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
+  transition: background .3s var(--ease);
 }
 .site-header.scrolled {
   height: var(--header-h-shrink);
-  background: rgba(255, 255, 255, .85);
   border-color: var(--line);
   box-shadow: var(--shadow-sm);
+}
+.site-header.scrolled::before {
+  background: rgba(255, 255, 255, .85);
 }
 
 .header-inner {
